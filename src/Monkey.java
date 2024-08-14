@@ -28,7 +28,7 @@ public class Monkey extends RescueAnimal{
         setBodyLength(bodyLength);
     }
 
-    // Mutator methods:
+    // Mutator methods specific for Monkey:
     public void setSpecie(String monkeySpecie) {
         this.specie = specie;
     }
@@ -45,7 +45,7 @@ public class Monkey extends RescueAnimal{
         this.bodyLength = bodyLength;
     }
 
-    // Accessor Methods:
+    // Accessor Methods specific for Monkey:
     public String getSpecie() {
         return specie;
     }
