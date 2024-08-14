@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a05ee035-c978-472c-95fe-2b56a0d2f12f" name="Changes" comment="Added monkey class">
-      <change beforePath="$PROJECT_DIR$/src/Monkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Monkey.java" afterDir="false" />
+    <list default="true" id="a05ee035-c978-472c-95fe-2b56a0d2f12f" name="Changes" comment="Modified comments in Monkey class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,11 +67,20 @@
       <option name="project" value="LOCAL" />
       <updated>1723674395670</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Modified comments in Monkey class">
+      <option name="closed" value="true" />
+      <created>1723674570898</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723674570898</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added monkey class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added monkey class" />
+    <MESSAGE value="Modified comments in Monkey class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified comments in Monkey class" />
   </component>
 </project>

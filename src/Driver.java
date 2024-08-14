@@ -1,3 +1,5 @@
+// Carlos Bracho
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -6,17 +8,61 @@ public class Driver {
     // Instance variables (if needed)
 
     public static void main(String[] args) {
-
+        // Creating Scanner Object
+        Scanner scanner = new Scanner(System.in);
 
         initializeDogList();
         initializeMonkeyList();
 
-        // Add a loop that displays the menu, accepts the users input
-        // and takes the appropriate action.
-	// For the project submission you must also include input validation
-        // and appropriate feedback to the user.
-        // Hint: create a Scanner and pass it to the necessary
-        // methods 
+        // While loop for Menu display and input validation
+        while (true) {
+            displayMenu();
+            String optionChoice = scanner.nextLine().toLowerCase();
+
+            switch (optionChoice) {
+                // Case 1: Input new dog
+                case "1":
+                    intakeNewDog(scanner);
+                    break;
+
+                // Case 2: Intake a new monkey
+                case "2":
+                    intakeNewMonkey(scanner);
+                    break;
+
+                // Case 3: Reserve an animal
+                case "3":
+                    reserveAnimal(scanner);
+                    break;
+
+                // Case 4: Print a list of all dogs
+                case "4":
+                    printAnimals(/*"dog"*/);
+                    break;
+
+                // Case 5: Print a list of all monkeys
+                case "5":
+                    printAnimals(/*"monkey"*/);
+                    break;
+
+                // Case 6: Print a list of all animals that are not reserved
+                case "6":
+                    printAnimals(/*"available"*/);
+                    break;
+
+                // Quit application:
+                case "q":
+                    System.out.println("Exiting application...");
+                    scanner.close();
+                    System.exit(0);
+
+                default:
+                    System.out.println("Invalid choice, please try again.");
+            }
+
+        }
+
+
 	// Hint: Menu options 4, 5, and 6 should all connect to the printAnimals() method.
 
     }
