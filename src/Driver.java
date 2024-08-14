@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Driver {
+    // Creating Monkey and Dog Lists
     private static ArrayList<Dog> dogList = new ArrayList<Dog>();
-    // Instance variables (if needed)
+    private static ArrayList<Monkey> monkeyList = new ArrayList<Monkey>();
 
     public static void main(String[] args) {
         // Creating Scanner Object
@@ -59,15 +60,10 @@ public class Driver {
                 default:
                     System.out.println("Invalid choice, please try again.");
             }
-
         }
-
-
-	// Hint: Menu options 4, 5, and 6 should all connect to the printAnimals() method.
-
     }
 
-    // This method prints the menu options
+    // Method for printing the menu options
     public static void displayMenu() {
         System.out.println("\n\n");
         System.out.println("\t\t\t\tRescue Animal System Menu");
@@ -98,14 +94,19 @@ public class Driver {
     // Adds monkeys to a list for testing
     //Optional for testing
     public static void initializeMonkeyList() {
+        Monkey monkey1 = new Monkey("Camille", "Squirrel monkey", "female", "5", "30.2", "10-12-2022", "Venezuela", "Phase II", true, "United States", 0.32, 1.13, 1.12);
+        Monkey monkey2 = new Monkey("Coco", "Guenon", "female", "4", "4.0", "04-20-2021", "Kenya", "Phase I", false, "United States", 35.0, 45.0, 55.0);
 
+        monkeyList.add(monkey1);
+        monkeyList.add(monkey2);
     }
 
 
-    // Complete the intakeNewDog method
-    // The input validation to check that the dog is not already in the list
-    // is done for you
+    // TODO: FINISH OPTION 1 IN MENU "Intake a new dog"
     public static void intakeNewDog(Scanner scanner) {
+        // TODO: put this in a Try/catch for input validation also check:
+        //  https://www.studocu.com/row/document/southern-new-hampshire-university/foundation-in-application-development/it-145-project-two/54591347?origin=search-results
+        // TODO: Make sure to use mutator methods to "SET" the other attributes for Dog
         System.out.println("What is the dog's name?");
         String name = scanner.nextLine();
         for(Dog dog: dogList) {
