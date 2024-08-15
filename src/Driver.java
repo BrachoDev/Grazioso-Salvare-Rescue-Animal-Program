@@ -101,7 +101,6 @@ public class Driver {
         monkeyList.add(monkey2);
     }
 
-// comment to test new hard drive
     // TODO: FINISH OPTION 1 IN MENU "Intake a new dog"
     public static void intakeNewDog(Scanner scanner) {
         // TODO: put this in a Try/catch for input validation also check:
