@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a05ee035-c978-472c-95fe-2b56a0d2f12f" name="Changes" comment="Finished option 1 intakenewdog">
+    <list default="true" id="a05ee035-c978-472c-95fe-2b56a0d2f12f" name="Changes" comment="Finished option 2 intakenewmonkey">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +48,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\Coding\Personal Projects\Grazioso Salvare Rescue Animal Program" />
       <recent name="C:\Users\Carlos Bracho\Desktop\Projects\Coding\Personal Projects\Grazioso Salvare Rescue Animal Program\src" />
     </key>
   </component>
@@ -129,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723995232794</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Finished option 2 intakenewmonkey">
+      <option name="closed" value="true" />
+      <created>1723996116882</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723996116882</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -140,6 +150,7 @@
     <MESSAGE value="testing new hard drive" />
     <MESSAGE value="Removing testing comment" />
     <MESSAGE value="Finished option 1 intakenewdog" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished option 1 intakenewdog" />
+    <MESSAGE value="Finished option 2 intakenewmonkey" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished option 2 intakenewmonkey" />
   </component>
 </project>

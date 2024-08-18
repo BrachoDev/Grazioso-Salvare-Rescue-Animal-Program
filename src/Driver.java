@@ -81,7 +81,7 @@ public class Driver {
 
     // Adds dogs to a list for testing
     public static void initializeDogList() {
-        Dog dog1 = new Dog("Spot", "German Shepherd", "male", "1", "25.6", "05-12-2019", "United States", "intake", false, "United States");
+        Dog dog1 = new Dog("Spot", "German Shepherd", "male", "1", "25.6", "05-12-2019", "United States", "in service", false, "United States");
         Dog dog2 = new Dog("Rex", "Great Dane", "male", "3", "35.2", "02-03-2020", "United States", "Phase I", false, "United States");
         Dog dog3 = new Dog("Bella", "Chihuahua", "female", "4", "25.6", "12-12-2019", "Canada", "in service", true, "Canada");
 
@@ -94,7 +94,7 @@ public class Driver {
     // Adds monkeys to a list for testing
     //Optional for testing
     public static void initializeMonkeyList() {
-        Monkey monkey1 = new Monkey("Camille", "Squirrel monkey", "female", "5", "30.2", "10-12-2022", "Venezuela", "Phase II", true, "United States", 0.32, 1.13, 1.12);
+        Monkey monkey1 = new Monkey("Camille", "Squirrel monkey", "female", "5", "30.2", "10-12-2022", "Venezuela", "in service", false, "United States", 0.32, 1.13, 1.12);
         Monkey monkey2 = new Monkey("Coco", "Guenon", "female", "4", "4.0", "04-20-2021", "Kenya", "Phase I", false, "United States", 35.0, 45.0, 55.0);
 
         monkeyList.add(monkey1);
@@ -229,11 +229,48 @@ public class Driver {
     }
 
 
-        // Complete reserveAnimal
-        // You will need to find the animal by animal type and in service country
+    // OPTION 3 IN MENU "Reserve Animal"
     public static void reserveAnimal(Scanner scanner) {
-            System.out.println("The method reserveAnimal needs to be implemented");
+        // Asking user for animal type and in service country
+        System.out.println("What is the animal type? Dog or Monkey?");
+        String animalType = scanner.nextLine();
+        System.out.println("What is the animal's in service country?");
+        String inServiceCountry = scanner.nextLine();
 
+        // Checking if Monkey is available for reservation
+        boolean reservation = false;
+        if (animalType.equalsIgnoreCase("Monkey")) {
+            for (Monkey monkey : monkeyList) {
+                if (monkey.getInServiceLocation().equalsIgnoreCase(inServiceCountry) &&
+                        monkey.getReserved() == false &&
+                        monkey.getTrainingStatus().equals("in service")) {  // Corrected here
+                    monkey.setReserved(true);
+                    System.out.println("You have reserved " + monkey.getName());
+                    reservation = true;
+                    return;
+                }
+            }
+            if (reservation == false) {
+                System.out.println("There are no Monkeys available to reserve at this service location.");
+            }
+        }
+
+        // Checking if Dog is available for reservation
+        if (animalType.equalsIgnoreCase("Dog")) {
+            for (Dog dog : dogList) {
+                if (dog.getInServiceLocation().equalsIgnoreCase(inServiceCountry) &&
+                        dog.getReserved() == false &&
+                        dog.getTrainingStatus().equals("in service")) {  // Corrected here
+                    dog.setReserved(true);
+                    System.out.println("You have reserved " + dog.getName());
+                    reservation = true;
+                    return;
+                }
+            }
+            if (reservation == false) {
+                System.out.println("No Dog is available to reserve at this service location.");
+            }
+        }
     }
 
         // Complete printAnimals
