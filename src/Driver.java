@@ -38,17 +38,17 @@ public class Driver {
 
                 // Case 4: Print a list of all dogs
                 case "4":
-                    printAnimals(/*"dog"*/);
+                    printAnimals("4");
                     break;
 
                 // Case 5: Print a list of all monkeys
                 case "5":
-                    printAnimals(/*"monkey"*/);
+                    printAnimals("5");
                     break;
 
                 // Case 6: Print a list of all animals that are not reserved
                 case "6":
-                    printAnimals(/*"available"*/);
+                    printAnimals("6");
                     break;
 
                 // Quit application:
@@ -273,21 +273,46 @@ public class Driver {
         }
     }
 
-        // Complete printAnimals
-        // Include the animal name, status, acquisition country and if the animal is reserved.
-	// Remember that this method connects to three different menu items.
-        // The printAnimals() method has three different outputs
-        // based on the listType parameter
-        // dog - prints the list of dogs
-        // monkey - prints the list of monkeys
-        // available - prints a combined list of all animals that are
-        // fully trained ("in service") but not reserved 
-	// Remember that you only have to fully implement ONE of these lists. 
-	// The other lists can have a print statement saying "This option needs to be implemented".
-	// To score "exemplary" you must correctly implement the "available" list.
-    public static void printAnimals() {
-        System.out.println("The method printAnimals needs to be implemented");
+    // OPTION 4, 5 AND 6 IN MENU "Print a list of all dogs", "Print a list of all monkeys",
+    // AND "Print a list of all animals that are not reserved"
+    public static void printAnimals(String optionChoice) {
 
+        // OPTION 4:
+        if (optionChoice.equals("4")) {
+            for (Dog dog : dogList) {
+                System.out.println("Name: " + dog.getName());
+                System.out.println("Status: " + dog.getTrainingStatus());
+                System.out.println("Acquisition Country: " + dog.getAcquisitionLocation());
+                System.out.println("Reserved: " + dog.getReserved());
+                System.out.println();
+            }
+        }
+
+        // OPTION 5:
+        else if (optionChoice.equals("5")) {
+            for (Monkey monkey : monkeyList) {
+                System.out.println("Name: " + monkey.getName());
+                System.out.println("Status: " + monkey.getTrainingStatus());
+                System.out.println("Acquisition Country: " + monkey.getAcquisitionLocation());
+                System.out.println("Reserved: " + monkey.getReserved());
+                System.out.println();
+            }
+        }
+
+        // OPTION 6:
+        else if (optionChoice.equals("6")) {
+            System.out.println("Available Animals:");
+            for (Dog dog : dogList) {
+                if (dog.getTrainingStatus().equals("in service") && !dog.getReserved()) {
+                    System.out.println("Dog Name: " + dog.getName());
+                }
+            }
+            for (Monkey monkey : monkeyList) {
+                if (monkey.getTrainingStatus().equals("in service") && !monkey.getReserved()) {
+                    System.out.println("Monkey Name: " + monkey.getName());
+                }
+            }
+        }
     }
 }
 

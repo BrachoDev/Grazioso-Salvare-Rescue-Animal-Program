@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a05ee035-c978-472c-95fe-2b56a0d2f12f" name="Changes" comment="Finished option 2 intakenewmonkey">
+    <list default="true" id="a05ee035-c978-472c-95fe-2b56a0d2f12f" name="Changes" comment="changed name of documentation file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
     </list>
@@ -139,7 +139,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723996116882</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Finished option 3 Reserve animal">
+      <option name="closed" value="true" />
+      <created>1724000666387</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724000666387</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changed name of documentation file">
+      <option name="closed" value="true" />
+      <created>1724000697670</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724000697670</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,6 +167,8 @@
     <MESSAGE value="Removing testing comment" />
     <MESSAGE value="Finished option 1 intakenewdog" />
     <MESSAGE value="Finished option 2 intakenewmonkey" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished option 2 intakenewmonkey" />
+    <MESSAGE value="Finished option 3 Reserve animal" />
+    <MESSAGE value="changed name of documentation file" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed name of documentation file" />
   </component>
 </project>
