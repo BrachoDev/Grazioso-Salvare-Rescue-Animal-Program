@@ -101,25 +101,65 @@ public class Driver {
         monkeyList.add(monkey2);
     }
 
-    // TODO: FINISH OPTION 1 IN MENU "Intake a new dog"
+    // OPTION 1 IN MENU "Intake a new dog"
     public static void intakeNewDog(Scanner scanner) {
-        // TODO: put this in a Try/catch for input validation also check:
-        //  https://www.studocu.com/row/document/southern-new-hampshire-university/foundation-in-application-development/it-145-project-two/54591347?origin=search-results
-        // TODO: Make sure to use mutator methods to "SET" the other attributes for Dog
+
         System.out.println("What is the dog's name?");
         String name = scanner.nextLine();
         for(Dog dog: dogList) {
-            if(dog.getName().equalsIgnoreCase(name)) {
+            if (dog.getName().equalsIgnoreCase(name)) {
                 System.out.println("\n\nThis dog is already in our system\n\n");
                 return; //returns to menu
             }
         }
 
-        // Add the code to instantiate a new dog and add it to the appropriate list
+        // Adding the rest of the attributes to the new dog
+        // Using "try" and "catch" for error management
+        try {
+            System.out.println("What is the dog's breed?");
+            String breed = scanner.nextLine();
+
+            System.out.println("What is the dog's gender?");
+            String gender = scanner.nextLine();
+
+            System.out.println("What is the dog's age?");
+            String age = scanner.nextLine();
+
+            System.out.println("What is the dog's weight?");
+            String weight = scanner.nextLine();
+
+            System.out.println("What is the dog's acquisition date (MM/DD/YYYY)?");
+            String acquisitionDate = scanner.nextLine();
+
+            System.out.println("What is the dog's acquisition country?");
+            String acquisitionCountry = scanner.nextLine();
+
+            System.out.println("What is the dog's training status?");
+            String trainingStatus = scanner.nextLine();
+
+            System.out.println("Is the dog reserved? (true/false)");
+            boolean reserved = scanner.nextBoolean();
+            scanner.nextLine(); // Consume newline
+
+            System.out.println("What is the dog's in-service country?");
+            String inServiceCountry = scanner.nextLine();
+
+            // Creating new Dog object
+            Dog newDog = new Dog(name, breed, gender, age, weight, acquisitionDate,
+                    acquisitionCountry, trainingStatus, reserved, inServiceCountry);
+
+            // Adding the new dog to the dog list (dogList)
+            dogList.add(newDog);
+
+            System.out.println("New dog added successfully!");
+
+        } catch (Exception e) {
+            System.out.println("Error: Invalid input. Please try again.");
+        }
     }
 
 
-        // Complete intakeNewMonkey
+        // TODO: COMPLETE OPTION 2 "intakeNewMonkey"
 	//Instantiate and add the new monkey to the appropriate list
         // For the project submission you must also  validate the input
 	// to make sure the monkey doesn't already exist and the species type is allowed
