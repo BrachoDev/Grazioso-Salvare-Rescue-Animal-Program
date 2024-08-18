@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a05ee035-c978-472c-95fe-2b56a0d2f12f" name="Changes" comment="Removing testing comment">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a05ee035-c978-472c-95fe-2b56a0d2f12f" name="Changes" comment="Finished option 1 intakenewdog">
       <change beforePath="$PROJECT_DIR$/src/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Driver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723724355021</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finished option 1 intakenewdog">
+      <option name="closed" value="true" />
+      <created>1723995232794</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723995232794</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -132,6 +139,7 @@
     <MESSAGE value="currently working on driver step 3 (method: intakeNewDog()) LINE 105. I have finished Monkey class and steps 1 and 2 for Driver" />
     <MESSAGE value="testing new hard drive" />
     <MESSAGE value="Removing testing comment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing testing comment" />
+    <MESSAGE value="Finished option 1 intakenewdog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished option 1 intakenewdog" />
   </component>
 </project>

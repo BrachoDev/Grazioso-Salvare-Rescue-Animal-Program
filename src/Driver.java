@@ -158,21 +158,83 @@ public class Driver {
         }
     }
 
+    // OPTION 2 IN MENU "Intake a new monkey"
+    public static void intakeNewMonkey(Scanner scanner) {
+        System.out.println("What is the monkey's name?");
+        String name = scanner.nextLine();
 
-        // TODO: COMPLETE OPTION 2 "intakeNewMonkey"
-	//Instantiate and add the new monkey to the appropriate list
-        // For the project submission you must also  validate the input
-	// to make sure the monkey doesn't already exist and the species type is allowed
-        public static void intakeNewMonkey(Scanner scanner) {
-            System.out.println("The method intakeNewMonkey needs to be implemented");
+        for(Monkey monkey: monkeyList) {
+            if (monkey.getName().equalsIgnoreCase(name)) {
+                System.out.println("\n\nThis monkey is already in our system\n\n");
+                return; //returns to menu
+                }
         }
+
+        // Adding the rest of the attributes to the new monkey
+        // Using "try" and "catch" for error management
+        try {
+            // Code to input only allowed Monkey species
+            System.out.println("Enter specie:");
+            String species = scanner.nextLine();
+            if (!species.equalsIgnoreCase("Capuchin") && !species.equalsIgnoreCase("Guenon") &&
+                    !species.equalsIgnoreCase("Macaque") && !species.equalsIgnoreCase("Marmoset") &&
+                    !species.equalsIgnoreCase("Squirrel monkey") && !species.equalsIgnoreCase("Tamarin")) {
+                System.out.println("Invalid species. Eligible species are Capuchin, Guenon, Macaque, Marmoset, Squirrel monkey, Tamarin.");
+                return; // Returns to menu
+            }
+
+            System.out.println("Enter gender:");
+            String gender = scanner.nextLine();
+
+            System.out.println("Enter age:");
+            String age = scanner.nextLine();
+
+            System.out.println("Enter weight:");
+            String weight = scanner.nextLine();
+
+            System.out.println("Enter acquisition date:");
+            String acquisitionDate = scanner.nextLine();
+
+            System.out.println("Enter acquisition country:");
+            String acquisitionCountry = scanner.nextLine();
+
+            System.out.println("Enter training status:");
+            String trainingStatus = scanner.nextLine();
+
+            System.out.println("Enter in service country:");
+            String inServiceCountry = scanner.nextLine();
+
+            System.out.println("Enter tail length:");
+            double tailLength = Double.parseDouble(scanner.nextLine());
+
+            System.out.println("Enter height:");
+            double height = Double.parseDouble(scanner.nextLine());
+
+            System.out.println("Enter body length:");
+            double bodyLength = Double.parseDouble(scanner.nextLine());
+
+            System.out.println("Is the monkey reserved? (true/false)");
+            boolean reserved = scanner.nextBoolean();
+            scanner.nextLine(); // Consume newline
+
+            // Initiating a new monkey and adding it to the monkey list
+            Monkey newMonkey = new Monkey(name, species, gender, age, weight, acquisitionDate, acquisitionCountry, trainingStatus, reserved, inServiceCountry, tailLength, height, bodyLength);
+            monkeyList.add(newMonkey);
+            System.out.println("New monkey added successfully.");
+
+        } catch (Exception e) {
+            System.out.println("Error: Invalid input. Please try again.");
+        }
+
+    }
+
 
         // Complete reserveAnimal
         // You will need to find the animal by animal type and in service country
-        public static void reserveAnimal(Scanner scanner) {
+    public static void reserveAnimal(Scanner scanner) {
             System.out.println("The method reserveAnimal needs to be implemented");
 
-        }
+    }
 
         // Complete printAnimals
         // Include the animal name, status, acquisition country and if the animal is reserved.
@@ -186,9 +248,9 @@ public class Driver {
 	// Remember that you only have to fully implement ONE of these lists. 
 	// The other lists can have a print statement saying "This option needs to be implemented".
 	// To score "exemplary" you must correctly implement the "available" list.
-        public static void printAnimals() {
-            System.out.println("The method printAnimals needs to be implemented");
+    public static void printAnimals() {
+        System.out.println("The method printAnimals needs to be implemented");
 
-        }
+    }
 }
 
