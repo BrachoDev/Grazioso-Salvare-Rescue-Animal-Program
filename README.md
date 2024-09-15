@@ -6,7 +6,7 @@ This project is a part of the "Foundation in App Development" (IT 145) course. I
 
 ## Project work
 
-Woredk on two main tasks:
+Worked on two main tasks:
 
 1. **Created the `Monkey` class**: This class inherits from the `RescueAnimal` class and include attributes specific to monkeys.
 2. **Modified the `Driver` class**: This involves implementing and modifying methods for intake, reservation, and printing of animals, ensuring input validation and user interaction.
